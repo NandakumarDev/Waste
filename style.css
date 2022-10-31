@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(153, 218, 255);
+}
+.head{
+    height:100%;
+    width:100%;
+    background-color:black;
+}
+.name{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding:2px;
+    animation-name: colorchange;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+.nav{
+    display: inline;
+}
+ul{
+    text-align: right;
+}
+li{
+    display: inline;
+    margin: 2rem;
+}
+ul>li>a{
+    text-decoration: none;
+    color:white;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+a:hover{
+    color:skyblue;
+}
+@keyframes colorchange{
+    0%{
+        color:rgb(44, 255, 72);
+    }
+    25%{
+        color:rgb(255, 217, 0);
+    }
+    50%{
+        color:rgb(255, 0, 221);
+    }
+    100%{
+        color:rgb(63, 252, 25);
+    } 
+}
+#home{
+    height: 200px;
+    text-align: justify;
+}
+#about{
+    height: 200px;
+    text-align: justify;
+}
+p{
+    color: black;
+    margin: 2%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+a{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+#learn{
+    height: 200px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width:130px;
+    border-radius:20px;
+    cursor: pointer;
+    gap:5rem;
+}
+.btn:hover{
+    background-color: darkcyan;
+    color:black;
+    border-radius: 25px;
+}
+a:hover{
+    color:black;
+}
